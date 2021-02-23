@@ -1,6 +1,16 @@
+html, body {
+    /*vh = viewport height / window height */
+    min-height: 100vh;
+}
+
 body {
-    background-color:rgb(30, 104, 88);
+    background-color:rgb(62, 185, 159);
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    
 
 }
 
-ifram
+.logo {
+    width:100px;
+}
