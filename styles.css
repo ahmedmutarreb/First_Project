@@ -4,13 +4,62 @@ html, body {
 }
 
 body {
-    background-color:rgb(62, 185, 159);
+    background-color:rgb(41, 180, 150);
     display:grid;
     grid-template-rows: auto 1fr auto;
-    
-
+    font-family:Arial, Helvetica, sans-serif;    
 }
 
 .logo {
     width:100px;
+}
+.logo:hover{
+    transform: rotate(180deg);
+}
+.main-header {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(50, 212, 158);
+}
+
+.main-navigation {
+    justify-self:end;
+    align-self: end;
+    display:flex;
+     
+
+}
+.main-navigation a{
+    color: rgb(51, 20, 20);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    display:grid;
+    background-color:rgba(0,0,0,0)
+
+}
+/*: hover is a pseudo class*/
+.main.navigation a:hover {
+    background-color: rgb(24, 32, 80);
+}
+.content {
+    margin : auto 50px;
+}
+.banner{
+    min-height: 50vh;
+    background-color: rgb(33, 128, 120);
+    display: grid;
+    place-items:center;
+    background-image:url('images/kristopher-roller-PC_lbSSxCZE-unsplash.jpg');
+    background-size:cover;
+    background-position: center;
+}
+.banner h1 {
+    font-size:3.2em;
+    color: rgb(252, 252, 252);
+    text-shadow:-3px -3px 1px black;
+    background-color:rgba(0, 0, 0, 0.205);
+
+    
+
 }
